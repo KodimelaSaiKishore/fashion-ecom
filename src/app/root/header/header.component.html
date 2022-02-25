@@ -1,0 +1,140 @@
+<!-- This is header section> -->
+
+<!-- <div class="container-fluid header-section bg-light">
+  <div class="d-md-flex justify-content-around py-3">
+
+    <button class="logo-section btn">
+      <h2><strong>LOGO</strong></h2>
+    </button>
+
+
+    <div class="my-auto d-md-flex">
+      <button class="mx-md-3 btn my-auto">Men</button>
+      <p class="my-auto">|</p>
+      <button class="mx-md-3 btn my-auto">Women</button>
+      <p class="my-auto">|</p>
+      <button class="mx-md-3 btn my-auto">Kids</button>
+
+      <span class="d-flex bg-light rounded-pill search-section">
+        <input
+          type="text"
+          class="border-0 bg-light rounded-pill px-3 form-control"
+          placeholder="search.."
+        />
+        <button class="btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </span>
+    </div>
+
+
+    <div class="my-auto cart-section">
+      <button class="btn fas fa-heart">
+        <span class="p-1 m-1 bg-danger text-white">11</span>
+      </button>
+      |
+      <button class="btn fas fa-shopping-cart">
+        <span class="p-1 m-1 bg-danger text-white">22</span>
+      </button>
+    </div>
+  </div>
+</div> -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+  <div class="container-fluid px-4 px-lg-5 mx-lg-3">
+    <!-- logo section -->
+    <a class="logo-section navbar-brand order-sm-first" routerLink="/home">
+      <h2><strong>Shop Arc</strong></h2>
+    </a>
+
+    <!-- small screen search section  -->
+    <div class="d-lg-none d-flex bg-light rounded-pill search-section mx-auto mb-2 order-first">
+      <input
+        type="text"
+        class="border-0 bg-light rounded-pill px-3 form-control"
+        placeholder="search.."
+      />
+      <button class="btn">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+
+    <!-- handburger menu section -->
+    <div
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </div>
+
+    <!-- Navigation menu and cart section  -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 ms-auto me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/men"
+            >Men</a
+          >
+        </li>
+        <span class="my-auto p-2 d-none d-lg-block">|</span>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/women">Women</a>
+        </li>
+        <span class="my-auto p-2 d-none d-lg-block">|</span>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/kids">Kids</a>
+        </li>
+
+        <!-- small screen cart and wishlist -->
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link" routerLink="wishlist"
+            >Wish List <span class="p-1 m-1 bg-danger text-white">11</span></a
+          >
+        </li>
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link" routerLink="cart"
+            >Cart <span class="p-1 m-1 bg-danger text-white">22</span></a
+          >
+        </li>
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link" routerLink="cart"
+            >Account</a
+          >
+        </li>
+
+        <!-- large screen search section  -->
+        <span
+          class="d-none d-lg-flex bg-light rounded-pill search-section mx-2"
+        >
+          <input
+            type="text"
+            class="border-0 bg-light rounded-pill px-3 form-control"
+            placeholder="search.."
+          />
+          <button class="btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </span>
+      </ul>
+
+      <!-- cart and wishlist section  -->
+      <div class="d-none d-lg-flex">
+        <div class="my-auto cart-section">
+          <button class="btn fas fa-heart" routerLink="/cart">
+            <span class="p-1 m-1 bg-danger text-white">11</span>
+          </button>
+          |
+          <button class="btn fas fa-shopping-cart" routerLink="/wishlist">
+            <span class="p-1 m-1 bg-danger text-white">22</span>
+          </button>
+          |
+          <i class="fas fa-solid fa-user btn"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,11 @@
+/* seearch section */
+.search-section{
+  border: .1px solid grey;
+  /* outline: black; */
+}
+
+/* cartsection  */
+span{
+  /* background-color: orange; */
+  border-radius: 50%;
+}
